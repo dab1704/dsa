@@ -394,10 +394,7 @@ void explainComparator()
 }
 bool internalComparator1(pair<int, int> a, pair<int, int> b)
 {
-    if (a.first < b.first)
-    {
-        return true;
-    }
+
     if (a.second > b.second)
     {
         return true;
@@ -405,6 +402,10 @@ bool internalComparator1(pair<int, int> a, pair<int, int> b)
     if (a.second < b.second)
     {
         return false;
+    }
+    if (a.first < b.first)
+    {
+        return true;
     }
     else
     {
